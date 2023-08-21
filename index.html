@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        Conditiones : điều kiện 
+            - if-else 
+                 + if
+                    * cú pháp : if(condition){ chứa nội dung 
+                               
+                                    }
+                 + if-else 
+                     if(condition){
+
+                        } else{
+
+                        }
+
+                 * Note : Nếu if sai thì else chạy còn nếu if đúng thì else không chạy.
+                 
+                 + if-else : lồng ==> trong if-else lại có if-else
+                 + if-else : bậc thang 
+
+     -->
+
+    <script>
+        // If-else : bậc thang
+        let a = 7;
+        if (a > 11) {
+            console.log(`${a} Là số lẻ`);
+        } else if (a > 5) {
+            console.log(`${a} Là số 1`);
+        } else if (a > 4) {
+            console.log(`${a} Là số 2`)
+        }
+        // If-else : lồng
+        if (a > 6) {
+            if (a % 2) {
+                console.log(`${a} là số lẻ`)
+            } else {
+                console.log(`${a} là số chẵn`)
+            }
+        } else if (a > 5) {
+
+        } else if (a > 4) {
+
+        } else {
+
+        }
+        // toán tử 3 ngôi 
+        a > 6 ? console.log(`${a} lớn hơn 6`) : console.log(` ${a} nhỏ hơn 6`);
+        let a = prompt("mời bạn nhập thứ trong tuần");
+        switch (a) {
+            case 2: // so sáng ===
+                console.log("Thứ 2 phải đi chơi bia ");
+                break;
+            case 3:
+                cosole.log("Thứ 3 lại đi chơi điện tử");
+                break;
+            default:
+                console.log("ngày được nghỉ");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
